@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Space+Grotesk&display=swap');
+
+.ff-space {
+    font-family: 'Space Grotesk',
+        sans-serif;
+}
+
+.ff-oleo {
+    font-family: 'Oleo Script',
+        cursive;
+}
+
+a {
+    text-decoration: none;
+}
+
+.fs_1 {
+    font-size: var(--fs_1);
+}
+
+.fs_2 {
+    font-size: var(--fs_2);
+}
+
+.fs_3 {
+    font-size: var(--fs_3);
+}
+
+.fs_4 {
+    font-size: var(--fs_4);
+}
+
+.fs_5 {
+    font-size: var(--fs_5);
+}
+
+.fs_6 {
+    font-size: var(--fs_6);
+}
+
+
+.fw_400 {
+    font-weight: 400;
+}
+
+.color_primary {
+    color: var(--color_primary);
+}
+
+.fw_500 {
+    font-weight: 500;
+}
+
+.fw_700 {
+    font-weight: 700;
+}

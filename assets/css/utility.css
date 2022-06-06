@@ -1,0 +1,244 @@
+body,
+html {
+    overflow-x: hidden;
+}
+
+@media (max-width:991.98px) {
+    .navbar-item {
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        flex-direction: column;
+        display: flex;
+
+        text-align: center;
+        opacity: 0;
+        pointer-events: none;
+        background-color: #0f298b;
+        width: 100%;
+        height: 100vh;
+        line-height: 100px;
+        transition: 200ms;
+        color: white;
+        z-index: 2;
+
+    }
+
+    .navbar-item a:hover {
+        background-color: black;
+        transition: 1200ms;
+        border-radius: 50%;
+    }
+
+    .line {
+        display: flex;
+        /* flex-direction: row; */
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        height: 6px;
+        background-color: black;
+        border-radius: 10px;
+        display: block;
+        color: black;
+        /* position: absolute;
+        top: 25px;
+        right: 5px; */
+    }
+
+    .line::before {
+        content: "";
+        position: absolute;
+        bottom: 15px;
+        left: 0%;
+        width: 100%;
+        height: 6px;
+        background-color: black;
+        border-radius: 10px;
+    }
+
+    .line::after {
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: 0%;
+        width: 100%;
+        height: 6px;
+        background-color: black;
+        border-radius: 10px
+    }
+
+    .show {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    #icon {
+        width: 50px;
+        height: 40px;
+        /* background: red; */
+        display: flex;
+        justify-self: center;
+        align-items: center;
+        z-index: 3;
+
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+* {
+    list-style-type: none;
+}
+
+.navbar-item a {
+    color: black;
+    font-size: var(--fs_5);
+
+}
+
+.navbar-item a:hover {
+    color: var(--color_primary);
+    font-weight: 700;
+
+}
+
+.button {
+    background: #2549D3;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    padding: 13px 28px;
+    transition: 500ms;
+}
+
+.button:hover {
+    background-color: #0f298b;
+    color: white;
+    transition: 500ms;
+
+}
+
+.border_bottom {
+    border-bottom: 1px solid #C4C4C4;
+    height: 100px;
+}
+
+.bg-color {
+    background-color: #fafafa;
+}
+
+.dropdown-toggle {
+    border: none;
+    background-color: transparent;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.card {
+    background: #FFFFFF;
+    box-shadow: 24px 24px 48px rgba(37, 73, 211, 0.05);
+    border-radius: 28px;
+    padding: 40px;
+    transition: 500ms ease-in;
+    width: 90%;
+
+
+}
+
+.card:hover {
+
+    box-shadow: 24px 24px 48px rgba(37, 73, 211, 1);
+    transition: 500ms ease-in;
+
+}
+
+.card1 {
+    background: #FFFFFF;
+    padding: 100px 32px;
+    height: 100%;
+    transition: 500ms ease-in;
+
+
+}
+
+.card1:hover {
+    box-shadow: 24px 24px 48px rgba(0, 0, 0, 0.05);
+    transition: 500ms ease-in;
+}
+
+p {
+    margin-bottom: 0em !important;
+    margin-block-start: 0em !important;
+    margin-block-end: 0em !important;
+}
+
+.hover_scale {
+    transition: .2s ease-in-out;
+}
+
+.hover_scale:hover {
+    transform: scale(1.3);
+}
+
+.card2 {
+    background: #FFFFFF;
+    border-radius: 0px 39.7214px;
+    padding: 8px 27px 35px 38px;
+    transition: 500ms ease-in;
+}
+
+.card2:hover {
+    box-shadow: 24px 24px 48px rgba(37, 73, 211, 1);
+    transition: 500ms ease-in;
+}
+
+.card3 {
+    background: #FFFFFF;
+    border-radius: 18.6868px;
+    padding: 18px;
+}
+
+.card3:hover {
+    box-shadow: 24px 24px 48px rgba(37, 73, 211, 1);
+    transition: 500ms ease-in;
+}
+
+
+.footer_bg {
+    background-color: #0f298b;
+}
+
+.ul {
+    font-size: var(--fs_3);
+    font-weight: var(--fw_700);
+}
+
+.ul li a {
+    font-size: var(--fs_6);
+    opacity: 0.8;
+    line-height: 52px;
+    font-weight: var(--fw_400);
+    color: white;
+}
+
+.min-vh-80 {
+    min-height: 80vh;
+}
+
+.image {
+    bottom: -80px;
+    left: -60px;
+    z-index: -1;
+}
